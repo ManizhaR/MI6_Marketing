@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовый сайт</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="screen" id="screen1">
+        <h1>Анимация</h1>
+        <button onclick="nextScreen()">Далее</button>
+    </div>
+
+    <div class="screen hidden" id="screen2">
+        <h1>Введите кодовое слово</h1>
+        <input type="text" id="codeInput">
+        <button onclick="checkCode()">Начать</button>
+    </div>
+
+    <div class="screen hidden" id="screen3">
+        <h1>Заполните анкету</h1>
+        <form id="form">
+            <input type="text" placeholder="Имя">
+            <input type="email" placeholder="Email">
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+
+    <div class="screen hidden" id="screen4">
+        <h1>Спасибо за сотрудничество!</h1>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
